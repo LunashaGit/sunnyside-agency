@@ -5,5 +5,68 @@
 }
 
 header{
-    background-image: url(../image/logo.svg);
+    figure{
+        position: static;
+        img{
+            max-width: 100%;
+        }
+    }
+    li{
+        display: inline-block;
+        float: right;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo{
+        float:left;
+    }
 }
+
+#six{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    place-items: center;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+#tree{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 10%;
+            border-radius: 100%;
+        }
+    }
+}
+
+#four{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    img{
+        width: 100%;
+    }
+}
+
+footer{
+    display: flex;
+    
+    }
