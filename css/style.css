@@ -35,6 +35,7 @@ header #logo {
 
 .essential {
   display: grid;
+  grid-template-rows: auto auto auto auto 1fr 1fr;
 }
 .essential img {
   width: 100%;
@@ -61,10 +62,18 @@ header #logo {
   color: #a7abae;
 }
 .essential #a {
-  background: url("../image/mobilep/image-graphic-design.jpg") no-repeat bottom/cover;
+  background: url("../image/mobilep/image-graphic-design.jpg") no-repeat center/cover;
+  height: 70vh;
 }
 .essential #b {
-  background: url("../image/mobilep/image-photography.jpg") no-repeat bottom/cover;
+  background: url("../image/mobilep/image-photography.jpg") no-repeat center/cover;
+}
+
+#four {
+  display: grid;
+}
+#four img {
+  width: 100%;
 }
 
 /* img{

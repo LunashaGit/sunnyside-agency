@@ -37,6 +37,7 @@ header{
 
 .essential{
     display: grid;
+    grid-template-rows: auto auto auto auto 1fr 1fr;
     img{
         width: 100%;
     }
@@ -62,12 +63,21 @@ header{
         }
     }
     #a{
-        background: url("../image/mobilep/image-graphic-design.jpg") no-repeat bottom/cover;
+        background: url("../image/mobilep/image-graphic-design.jpg") no-repeat center/cover;
+        height: 70vh;
     }
     #b{
-        background: url("../image/mobilep/image-photography.jpg") no-repeat bottom/cover
+        background: url("../image/mobilep/image-photography.jpg") no-repeat center/cover
     }
 }
+
+    #four{
+        display: grid;
+        img{
+            width: 100%;
+        }
+    }
+
 
 /* img{
     display: none;
