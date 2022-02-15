@@ -61,7 +61,7 @@ header #logo {
   font-family: "Barlow", sans-serif;
   color: #a7abae;
 }
-.essential #a {
+.essential #a, .essential #b {
   background: url("../image/mobilep/image-graphic-design.jpg") no-repeat center/cover;
   height: 70vh;
 }
@@ -69,11 +69,66 @@ header #logo {
   background: url("../image/mobilep/image-photography.jpg") no-repeat center/cover;
 }
 
+.client {
+  text-align: center;
+}
+.client img {
+  border-radius: 100%;
+  width: 25%;
+}
+.client div {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.client h2 {
+  color: #a7abae;
+  font-family: "Fraunces", serif;
+}
+.client h3 {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+}
+.client p {
+  color: #23303e;
+  font-family: "Barlow", sans-serif;
+}
+.client #grey {
+  color: #a7abae;
+  font-family: "Barlow", sans-serif;
+}
+
+#a, #b {
+  padding-top: 120%;
+  text-align: center;
+}
+#a h2, #b h2 {
+  font-family: "Fraunces", serif;
+}
+#a p, #b p {
+  font-family: "Barlow", sans-serif;
+}
+
 #four {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 #four img {
   width: 100%;
+}
+
+footer {
+  background: #458c7e;
+  text-align: center;
+}
+footer li {
+  display: inline;
+}
+footer li a {
+  text-decoration: none;
+  color: #25564b;
 }
 
 /* img{
