@@ -10,21 +10,35 @@ header figure {
 header figure img {
   max-width: 100%;
 }
+header ul {
+  position: absolute;
+  top: 2%;
+  right: 15%;
+  display: flex;
+  justify-content: space-between;
+}
 header li {
-  display: inline-block;
-  float: right;
+  margin-left: 30%;
+  display: inline;
 }
 header li a {
   text-decoration: none;
   color: white;
 }
 header h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 42.5%;
+  font-size: 500%;
 }
 header #logo {
-  float: left;
+  position: absolute;
+  top: 2%;
+  left: 2%;
 }
 
 #six {
