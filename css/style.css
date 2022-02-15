@@ -40,30 +40,51 @@ header #logo {
   top: 2%;
   left: 2%;
 }
-
-#six {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: auto;
-  place-items: center;
+header #down {
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  right: 49%;
 }
-#six div {
+
+.essential {
+  display: grid;
+}
+.essential article {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.essential div {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+}
+
+.textin {
+  display: grid;
+}
+.textin article {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.textin img {
+  position: relative;
   width: 100%;
 }
 
 #tree {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-left: 10%;
+  margin-right: 10%;
 }
 #tree div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 #tree div img {
   width: 10%;
