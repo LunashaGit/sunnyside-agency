@@ -1,129 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700&display=swap");
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header figure {
-  position: static;
+body {
+  font-size: px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh auto;
 }
-header figure img {
-  max-width: 100%;
-}
-header ul {
-  position: absolute;
-  top: 2%;
-  right: 15%;
+
+header {
+  background: url("../image/mobilep/image-header.jpg") no-repeat bottom/cover;
   display: flex;
-  justify-content: space-between;
-}
-header li {
-  margin-left: 30%;
-  display: inline;
-}
-header li a {
-  text-decoration: none;
-  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 header h1 {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 42.5%;
-  font-size: 500%;
+  font-family: "Fraunces", serif;
+  color: white;
+}
+header ul {
+  display: none;
 }
 header #logo {
   position: absolute;
-  top: 2%;
-  left: 2%;
-}
-header #down {
-  position: absolute;
-  top: 50%;
-  left: 49%;
-  right: 49%;
+  top: 10px;
+  left: 10px;
 }
 
 .essential {
   display: grid;
 }
-.essential article {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-.essential div {
-  display: flex;
-  flex-direction: column;
-}
-.essential div .size {
-  margin: 35%;
-}
-
-.textin {
-  display: grid;
-}
-.textin article {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-.textin h2 {
-  position: absolute;
-  top: 350%;
-}
-.textin img {
-  position: relative;
-  z-index: -1;
+.essential img {
   width: 100%;
 }
-
-.client {
+.essential .size {
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  background-color: #FFFBF8;
+}
+.essential .size * {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.client #tree {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-left: 10%;
-  margin-right: 10%;
+.essential .size h2, .essential .size a {
+  font-family: "Fraunces", serif;
+  text-decoration: none;
+  color: #23303e;
 }
-.client #tree div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10%;
+.essential .size p {
+  font-family: "Barlow", sans-serif;
+  color: #a7abae;
 }
-.client #tree div p {
-  font-size: 150%;
-  margin: 5%;
+.essential #a {
+  background: url("../image/mobilep/image-graphic-design.jpg") no-repeat bottom/cover;
 }
-.client #tree div img {
-  width: 20%;
-  border-radius: 100%;
+.essential #b {
+  background: url("../image/mobilep/image-photography.jpg") no-repeat bottom/cover;
 }
 
-#four {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-#four img {
-  width: 100%;
-}
-
-footer {
-  display: flex;
-  background-color: #90D4C5;
-  justify-content: center;
-}
-footer li {
-  list-style-type: none;
-}
+/* img{
+    display: none;
+} */
 
 /*# sourceMappingURL=style.css.map */

@@ -1,135 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700&display=swap');
+
 *, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-size: px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh auto;
+}
+
+
 header{
-    figure{
-        position: static;
-        img{
-            max-width: 100%;
-        }
+    background: url("../image/mobilep/image-header.jpg") no-repeat bottom/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-family: 'Fraunces', serif;
+        color: white;
     }
     ul{
-        position:absolute;
-        top: 2%;
-        right: 15%;
-        display: flex;
-        justify-content: space-between;
-    }
-    li{
-        margin-left: 30%;
-        display: inline;
-        a{
-            text-decoration: none;
-            color: white;
-        }
-    }
-    h1{
-        position: absolute;
-        top:20%;
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto; 
-        width: 42.5%;
-        font-size: 500%;
-
+        display: none;
     }
     #logo{
         position:absolute;
-        top:2%;
-        left: 2%;
-
-    }
-    #down{
-        position: absolute;
-        top: 50%;
-        left: 49%;
-        right: 49%;
+        top:10px;
+        left:10px;
     }
 }
 
 .essential{
     display: grid;
-    article{
-        display: grid;
-        grid-template-columns: 50% 50%;
+    img{
+        width: 100%;
     }
-    div{
+    .size{
+        margin: 5%;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
-        .size{
-            margin: 35%;
+        text-align: center;
+        *{
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        h2, a{
+           font-family: 'Fraunces', serif;
+            text-decoration: none;
+            color:hsl(212, 27%, 19%);
+        }
+        p{
+            font-family: 'Barlow', sans-serif;
+            color: hsl(210, 4%, 67%);
         }
     }
-}
-
-.textin{
-    display: grid;
-    article{
-        display: grid;
-        grid-template-columns: 50% 50%;
+    #a{
+        background: url("../image/mobilep/image-graphic-design.jpg") no-repeat bottom/cover;
     }
-    h2{
-        position: absolute;
-        top:350%;
-        
-    }
-    img{
-        position: relative;
-        z-index: -1;
-        width: 100%;
-    }
-    
-}
-
-
-.client{
-    text-align: center;
-    background-color: #FFFBF8;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    #tree{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: 10%;
-        margin-right: 10%;
-        div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-top: 10%;
-            p{
-                font-size: 150%;
-                margin:5%;
-            }
-            img{
-                width: 20%;
-                border-radius: 100%;
-            }
-            
-        }
+    #b{
+        background: url("../image/mobilep/image-photography.jpg") no-repeat bottom/cover
     }
 }
 
-#four{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    img{
-        width: 100%;
-    }
-}
-
-footer{
-    display: flex;
-    background-color: #90D4C5;
-    justify-content: center;
-    li{
-        list-style-type: none;
-    }
-    }
+/* img{
+    display: none;
+} */
