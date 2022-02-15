@@ -4,4 +4,10 @@
   box-sizing: border-box;
 }
 
+header {
+  background-image: url(../image/photos/image-header.jpg);
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
