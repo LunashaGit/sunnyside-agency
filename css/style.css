@@ -57,7 +57,9 @@ header #down {
 .essential div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+.essential div .size {
+  margin: 35%;
 }
 
 .textin {
@@ -67,27 +69,43 @@ header #down {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+.textin h2 {
+  position: absolute;
+  top: 350%;
+}
 .textin img {
   position: relative;
+  z-index: -1;
   width: 100%;
 }
 
-#tree {
+.client {
+  text-align: center;
+  background-color: #FFFBF8;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.client #tree {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-left: 10%;
   margin-right: 10%;
 }
-#tree div {
+.client #tree div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 10%;
 }
-#tree div img {
-  width: 10%;
+.client #tree div p {
+  font-size: 150%;
+  margin: 5%;
+}
+.client #tree div img {
+  width: 20%;
   border-radius: 100%;
 }
 
@@ -101,6 +119,11 @@ header #down {
 
 footer {
   display: flex;
+  background-color: #90D4C5;
+  justify-content: center;
+}
+footer li {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */
