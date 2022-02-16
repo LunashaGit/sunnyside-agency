@@ -26,7 +26,8 @@ header{
         margin-bottom: 10%;
         font-family: 'Fraunces', serif;
         color: white;
-        font-size: 4vw;
+        font-size: 15vw;
+        text-align: center;
     }
 
     #logo{
@@ -462,6 +463,11 @@ footer{
         img, picture{
             width: 100%;
             height: 100%;
+        }
+    }
+    header{
+        h1{
+            font-size:4vw;
         }
     }
     
