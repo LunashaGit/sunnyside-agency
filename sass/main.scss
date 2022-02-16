@@ -110,7 +110,7 @@ header{
 }
 
 #a{
-    padding-top: 120%;    
+    padding-top: 45vh;    
     text-align: center;
     h2{
         color:hsl(167, 40%, 24%);   
@@ -167,6 +167,15 @@ footer{
             color:#25564b;
             font-family: 'Barlow', sans-serif;
 
+        }
+    }
+}
+
+#tree{
+    div{
+        p, h3{
+            padding-top: 5%;
+            padding-bottom: 5%;
         }
     }
 }
@@ -437,6 +446,7 @@ footer{
     #tree{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        
         
     }
     .client{
