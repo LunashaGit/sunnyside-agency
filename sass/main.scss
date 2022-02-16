@@ -8,9 +8,9 @@
 
 body{
     font-size: 18px;
-    width: 100vw;
+    width: 100%;
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
     grid-template-rows: 100vh auto;
 }
 
@@ -162,7 +162,6 @@ footer{
         a{
             text-decoration: none;
             color:#25564b;
-            padding-bottom: 10%;
             font-family: 'Barlow', sans-serif;
 
         }
@@ -353,9 +352,9 @@ footer{
     #menu
     {
     position: absolute;
-    width: 800px;
+    width: 665px;
     top:-80px;
-    right: -130px;
+    right: 0px;
     list-style-type: none;
     background-color: #3EBFFF;
     opacity: 100%;
