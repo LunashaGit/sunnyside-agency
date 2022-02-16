@@ -133,10 +133,10 @@ header{
 #four{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
 
-    img{
+    img, picture{
         width: 100%;
+        height: 100%;
     }
 }
 
@@ -255,6 +255,7 @@ footer{
 
 #menu
 {
+  
   position: absolute;
   width: 300px;
   margin: 30px 0px 0 -300px; //-525
@@ -271,6 +272,9 @@ footer{
 {
   padding: 10px 0;
   font-size: 22px;
+  a{
+    font-family: 'Barlow', sans-serif;
+  }
 }
 
 #menuToggle input:checked ~ ul
@@ -282,6 +286,96 @@ footer{
 }
 
 @media screen and ( min-width: 800px){
+    #menuToggle
+    {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+
+    }
+
+    #menuToggle a
+    {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+    }
+
+
+
+    #menuToggle input
+    {
+    display:none;
+
+    }
+
+    #menuToggle span
+    {
+    display: none;
+    
+    }
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu
+    {
+    position: absolute;
+    width: 800px;
+    top:-80px;
+    right: -130px;
+    list-style-type: none;
+    background-color: #3EBFFF;
+    opacity: 100%;
+    }
+
+    #menu li
+    {
+    padding-left: 10%;
+    font-size: 22px;
+    display: inline;
+    
+    }
+
+    #menuToggle input:checked ~ ul
+    {
+    transform: none;
+    opacity: 100%;
+    transition: all ease-in-out 0.2s;
+    
+    }
     header{
         background: url("../image/photos/image-header.jpg") no-repeat bottom/cover;
     }
