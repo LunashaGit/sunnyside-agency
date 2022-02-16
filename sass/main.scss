@@ -380,10 +380,7 @@ footer{
         background: url("../image/photos/image-header.jpg") no-repeat bottom/cover;
     }
     .essential{
-        img, picture{
-            width: 100%;
-            height: 100%;
-        }
+        
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "b a"
@@ -449,6 +446,12 @@ footer{
                 padding-top: 3%;
                 padding-bottom: 3%;
             }
+        }
+    }
+    .essential{
+        img, picture{
+            width: 100%;
+            height: 100%;
         }
     }
     

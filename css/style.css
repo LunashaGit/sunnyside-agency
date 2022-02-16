@@ -325,10 +325,6 @@ footer li a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "b a" "c d" "e f";
   }
-  .essential img, .essential picture {
-    width: 100%;
-    height: 100%;
-  }
   .essential div:nth-child(1) {
     grid-area: a;
   }
@@ -386,6 +382,11 @@ footer li a {
   footer figure img {
     padding-top: 3%;
     padding-bottom: 3%;
+  }
+
+  .essential img, .essential picture {
+    width: 100%;
+    height: 100%;
   }
 }
 
