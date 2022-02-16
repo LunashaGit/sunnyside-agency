@@ -7,7 +7,7 @@
 }
 
 body{
-    font-size: px;
+    font-size: 18px;
     width: 100vw;
     display: grid;
     grid-template-columns: 100vw;
@@ -77,11 +77,13 @@ header{
         width: 25%;
     }
     div{
-        padding-top: 10%;
+        padding-top: 5%;
         padding-bottom: 10%;
         padding-left: 5%;
         padding-right: 5%;
-        
+        h2{
+            padding-top: 10%;
+        }
         
         }
     h2{
@@ -107,7 +109,7 @@ header{
     padding-top: 120%;    
     text-align: center;
     h2{
-        color:hsl(167, 40%, 24%);
+        color:hsl(167, 40%, 24%);   
         font-family: 'Fraunces', serif;
     }
     p{
@@ -129,7 +131,7 @@ header{
 
 #four{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
 
     img{
@@ -140,25 +142,31 @@ header{
 footer{
     background:hsl(168, 34%, 41%);
     text-align:center;
-    img{
-
+    ul{
+        padding-bottom: 10%;
+        li{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+    figure{
+        img{
+            filter: invert(25%) sepia(50%) saturate(474%) hue-rotate(116deg) brightness(95%) contrast(86%);
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
     }
     li{
         display: inline;
         a{
             text-decoration: none;
-            color:hsl(167, 40%, 24%);
+            color:#25564b;
+            padding-bottom: 10%;
+            font-family: 'Barlow', sans-serif;
+
         }
     }
 }
-
-
-
-
-/* img{
-    display: none;
-} */
-
 
 #menuToggle
 {
@@ -169,6 +177,7 @@ footer{
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
+
 }
 
 #menuToggle a
@@ -179,10 +188,6 @@ footer{
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
-{
-  color: tomato;
-}
 
 
 #menuToggle input
@@ -197,6 +202,7 @@ footer{
   opacity: 0; 
   z-index: 2;
   -webkit-touch-callout: none;
+
 }
 
 #menuToggle span
@@ -219,6 +225,7 @@ footer{
 #menuToggle span:first-child
 {
   transform-origin: 0% 0%;
+
 }
 
 #menuToggle span:nth-last-child(2)
@@ -231,6 +238,7 @@ footer{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
+  
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3)
@@ -248,15 +256,14 @@ footer{
 {
   position: absolute;
   width: 300px;
-  margin: 0px 0px 0 -250px; //-525
+  margin: 0px 0px 0 -300px; //-525
   padding: 50px;
-  padding-top: 125px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(325px, 0px);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  opacity: 0%;
 }
 
 #menu li
@@ -268,4 +275,82 @@ footer{
 #menuToggle input:checked ~ ul
 {
   transform: none;
+  opacity: 100%;
+  transition: all ease-in-out 0.2s;
+  
+}
+
+@media screen and ( min-width: 800px){
+    header{
+        background: url("../image/photos/image-header.jpg") no-repeat bottom/cover;
+    }
+    .essential{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "b a"
+        "c d"
+        "e f";
+        div:nth-child(1){
+            grid-area: a;
+        }
+        div:nth-child(2){
+            grid-area: b;
+        }
+        div:nth-child(3){
+            grid-area: c;
+        }
+        div:nth-child(4){
+            grid-area: d;
+        }
+        div:nth-child(5){
+            grid-area: e;
+        }
+        div:nth-child(6){
+            grid-area: f;
+        }
+        #a{
+            background: url("../image/photos/image-graphic-design.jpg") no-repeat center/cover;
+        }
+        #b{
+        background: url("../image/photos/image-photography.jpg") no-repeat center/cover;
+
+        }
+    }
+    #a{
+        padding-top: 45vh;
+        p, h2{
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    }
+    #four{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+    #tree{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .client{
+        div{
+            padding-top: 0%;
+        }
+    }
+    footer{
+        ul{
+            padding-bottom: 3%;
+            li{
+                padding-left: 2.50%;
+                padding-right: 2.50%;
+            }
+        }
+        figure{
+            img{
+                padding-top: 3%;
+                padding-bottom: 3%;
+            }
+        }
+    }
+    
 }
