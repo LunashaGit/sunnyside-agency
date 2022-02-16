@@ -23,6 +23,7 @@ header {
 header h1 {
   font-family: "Fraunces", serif;
   color: white;
+  font-size: 8vw;
 }
 header #logo {
   position: absolute;
