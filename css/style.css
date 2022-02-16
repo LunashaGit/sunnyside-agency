@@ -223,7 +223,7 @@ footer li a {
 #menu {
   position: absolute;
   width: 300px;
-  margin: 0px 0px 0 -300px;
+  margin: 30px 0px 0 -300px;
   padding: 50px;
   background: #ededed;
   list-style-type: none;
