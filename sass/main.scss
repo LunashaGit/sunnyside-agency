@@ -408,7 +408,10 @@ footer{
         }
         #b{
         background: url("../image/photos/image-photography.jpg") no-repeat center/cover;
-
+        }
+        img, picture{
+            width: 100%;
+            height: 100%;
         }
     }
     #a{
