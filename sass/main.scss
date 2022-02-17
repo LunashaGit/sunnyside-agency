@@ -28,6 +28,7 @@ body{
         color: white;
         font-size: 15vw;
         text-align: center;
+
     }
 
     &__img{
@@ -199,6 +200,7 @@ body{
     img{
         border-radius: 100%;
         width: 25%;
+        margin-bottom: 10%;
     }
     &__div{
         padding-top: 5%;
@@ -292,15 +294,20 @@ footer{
 
 #tree{
     div{
-        p, h3{
-            padding-top: 5%;
-            padding-bottom: 5%;
+        padding-bottom: 10%;
+        p{
+            padding-top: 0%;
+            padding-bottom: 10%;
+        }
+        h3{
+            padding-top: 0%;
+            padding-bottom: 0%;
         }
     }
 }
 
 
-@media screen and ( min-width: 800px){
+@media screen and ( min-width: 900px){
     #menuToggle
     {
     display: flex;
@@ -457,6 +464,8 @@ footer{
         
     }
     .client{
+        margin-left: 25vh;
+        margin-right: 25vh;
         img{
             width: 15%;
         }
@@ -465,6 +474,9 @@ footer{
         }
     }
     footer{
+        img:hover{
+            filter: invert(100%) sepia(0%) saturate(3546%) hue-rotate(259deg) brightness(107%) contrast(88%);
+        }
         ul{
             padding-bottom: 3%;
             li{
