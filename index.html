@@ -12,15 +12,15 @@
 
 </head>
 <body>
-    <header>
-        <img id="logo" src="image/logo.svg">
-        <div id="menuToggle">
-            <nav role="navigation">
-                <input type="checkbox" />
+    <header class="header">
+        <img class="header__img" id="logo" src="image/logo.svg">
+        <div class="header__menu" id="menuToggle">
+            <nav class="header__nav" role="navigation">
+                <input class="nav_input" type="checkbox" />
                 <span></span>
                 <span></span>
                 <span></span>
-                <ul id="menu">
+                <ul class="nav__menu" id="menu">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Projects</a></li>
@@ -28,101 +28,101 @@
                 </ul>
             </nav>
         </div>
-        <h1>WE ARE CREATIVES</h1>
-        <figure><img id="down" src="image/icons/icon-arrow-down.svg"></figure>
+        <h1 class="header__h1">WE ARE CREATIVES</h1>
+        <figure><img class="header__figure" id="down" src="image/icons/icon-arrow-down.svg"></figure>
     </header>
-    <section class="essential">
+    <section class="essential"> <!-- class="essential" -->
             <div>
                 <picture>
                     <source media="(max-width: 799px)" srcset="./image/mobilep/image-transform.jpg">
                     <source media="(min-width: 800px)" srcset="./image/photos/image-transform.jpg">
-                    <img src="/image/photos/image-transform.jpg">
+                    <img class="essential__image" src="/image/photos/image-transform.jpg">
                 </picture>
             </div>
-                <div class="size">
-                    <h2>Transform your brand</h2>
-                    <p>We are a full-service creative agency specializing in helping brands grow fast. Engage you clients through compelling visuals that do most of the marketing for you.</p>
-                    <a href="#">LEARN MORE</a>
+                <div class="essential__size"> <!-- class="size" -->
+                    <h2 class="size__h2">Transform your brand</h2>
+                    <p class="size__p">We are a full-service creative agency specializing in helping brands grow fast. Engage you clients through compelling visuals that do most of the marketing for you.</p>
+                    <a class="size__a" href="#">LEARN MORE</a>
                 </div>
             <div>
                 <picture>
                     <source media="(max-width: 799px)" srcset="./image/mobilep/image-stand-out.jpg">
                     <source media="(min-width: 800px)" srcset="./image/photos/image-stand-out.jpg">
-                    <img src="/image/photos/image-stand-out.jpg">
+                    <img class="essential__image" src="/image/photos/image-stand-out.jpg">
                 </picture>
             </div>
-                <div class="size">
-                    <h2>Stand out to the right audience</h2>
-                    <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build an extend your brand in digital places.</p>
-                    <a href="#">LEARN MORE</a>
+                <div class="essential__size"> <!-- class="size" -->
+                    <h2 class="size__h2">Stand out to the right audience</h2>
+                    <p class="size__p">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build an extend your brand in digital places.</p>
+                    <a id="other" class="size__a" href="#">LEARN MORE</a>
                 </div>
-            <div id="a">
-                <h2>Graphic Design</h2>
-                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and caputres potential clients attention.</p>
+            <div class="essential__back" id="a">
+                <h2 class="back__h2">Graphic Design</h2>
+                <p class="back__p">Great design makes you memorable. We deliver artwork that underscores your brand message and caputres potential clients attention.</p>
             </div>
-            <div id="b">
-                <h2>Photography</h2>
-                <p>Increase your credibility by getting the most stunning, hight-quality photos that improve your business image.</p>
+            <div class="essential__backb" id="b">
+                <h2 class="back__h2">Photography</h2>
+                <p class="back__p">Increase your credibility by getting the most stunning, hight-quality photos that improve your business image.</p>
             </div>
     </section>
     <section class="client">
-        <div><h2>CLIENT TESTIMONIALS</h2></div>
-        <div id="tree">
-        <div>
-            <img src="image/people/image-emily.jpg">
-            <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-            <h3>Emily R.</h3>
-            <p id="grey">Marketing Director</p>
+        <div class="client__div"><h2>CLIENT TESTIMONIALS</h2></div>
+        <div  class="client__tree" id="tree">
+        <div class="client__div">
+            <img class="client__img" src="image/people/image-emily.jpg">
+            <p class="client__p">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <h3 class="client__h3">Emily R.</h3>
+            <p class="client__p" id="grey">Marketing Director</p>
         </div>
-        <div>
-            <img src="image/people/image-thomas.jpg">
-            <p>Sunnyside's enthusiasm coupled with their keen intereset in our brand's success made it a satisfying and enjoyable experience.</p>
-            <h3>Thomas S.</h3>
-            <p id="grey">Chief Operating Officer</p>
+        <div class="client__div">
+            <img class="client__img" src="image/people/image-thomas.jpg">
+            <p class="client__p">Sunnyside's enthusiasm coupled with their keen intereset in our brand's success made it a satisfying and enjoyable experience.</p>
+            <h3 class="client__h3">Thomas S.</h3>
+            <p class="client__p" id="grey">Chief Operating Officer</p>
         </div>
-        <div>
-            <img src="image/people/image-jennie.jpg">
-            <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-            <h3>Jennie F.</h3>
-            <p id="grey">Businness Owner</p>
+        <div class="client__div">
+            <img class="client__img" src="image/people/image-jennie.jpg">
+            <p class="client__p">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <h3 class="client__h3">Jennie F.</h3>
+            <p class="client__p" id="grey">Businness Owner</p>
         </div>
     </div>
     </section>
-    <section id="four">
-        <picture>
+    <section class="four" id="four">
+        <picture class="four__picture">
             <source media="(max-width: 799px)" srcset="./image/mobilep/image-gallery-milkbottles.jpg">
             <source media="(min-width: 800px)" srcset="./image/photos/image-gallery-milkbottles.jpg">
-        <img src="image/mobilep/image-gallery-milkbottles.jpg">
+        <img class="four__img"src="image/mobilep/image-gallery-milkbottles.jpg">
         </picture>
-        <picture>
+        <picture class="four__picture">
             <source media="(max-width: 799px)" srcset="./image/mobilep/image-gallery-orange.jpg">
             <source media="(min-width: 800px)" srcset="./image/photos/image-gallery-orange.jpg">
-        <img src="image/mobilep/image-gallery-orange.jpg">
+        <img class="four__img" src="image/mobilep/image-gallery-orange.jpg">
         </picture>
-        <picture>
+        <picture class="four__picture">
             <source media="(max-width: 799px)" srcset="./image/mobilep/image-gallery-cone.jpg">
             <source media="(min-width: 800px)" srcset="./image/photos/image-gallery-cone.jpg">
-        <img src="image/mobilep/image-gallery-cone.jpg">
+        <img  class="four__img" src="image/mobilep/image-gallery-cone.jpg">
         </picture>
-        <picture>
+        <picture class="four__picture">
             <source media="(max-width: 799px)" srcset="./image/mobilep/image-gallery-sugar-cubes.jpg">
             <source media="(min-width: 800px)" srcset="./image/photos/image-gallery-sugarcubes.jpg">
-        <img src="image/mobilep/image-gallery-sugar-cubes.jpg">
+        <img class="four__img" src="image/mobilep/image-gallery-sugar-cubes.jpg">
         </picture>
     </section>
-    <footer>
+    <footer class="footer">
         <div>
-            <figure><img id="sunnyside" src="image/logo.svg"></figure>
+            <figure class="footer__figure"><img id="sunnyside" src="image/logo_othercolor.svg"></figure>
         </div>
         <div>
-            <ul>
+            <ul class="footer__ul">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Projects</a></li>
             </ul>
         </div>
         <div>
-            <ul>
+            <ul class="footer__ul">
                 <li><a href="#"><img src="image/icons/icon-facebook.svg"></a></li>
                 <li><a href="#"><img src="image/icons/icon-instagram.svg"></a></li>
                 <li><a href="#"><img src="image/icons/icon-twitter.svg"></a></li>
