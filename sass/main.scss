@@ -438,6 +438,11 @@ footer{
         div:nth-child(6){
             grid-area: f;
         }
+        &__size{
+            margin:10vw;
+            align-items: flex-start;
+            text-align: left;
+        }
         #a{
             background: url("../image/photos/image-graphic-design.jpg") no-repeat center/cover;
         }
@@ -450,6 +455,7 @@ footer{
         padding-top: 45vh;
         p, h2{
             margin-left: 25%;
+        
             margin-right: 25%;
         }
     }
@@ -475,7 +481,7 @@ footer{
     }
     footer{
         img:hover{
-            filter: invert(100%) sepia(0%) saturate(3546%) hue-rotate(259deg) brightness(107%) contrast(88%);
+            filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(259deg) brightness(9999%) contrast(88%);
         }
         ul{
             padding-bottom: 3%;

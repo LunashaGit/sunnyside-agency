@@ -376,6 +376,11 @@ footer li a {
   .essential div:nth-child(6) {
     grid-area: f;
   }
+  .essential__size {
+    margin: 10vw;
+    align-items: flex-start;
+    text-align: left;
+  }
   .essential #a, .essential #b {
     background: url("../image/photos/image-graphic-design.jpg") no-repeat center/cover;
   }
@@ -413,7 +418,7 @@ footer li a {
   }
 
   footer img:hover {
-    filter: invert(100%) sepia(0%) saturate(3546%) hue-rotate(259deg) brightness(107%) contrast(88%);
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(259deg) brightness(9999%) contrast(88%);
   }
   footer ul {
     padding-bottom: 3%;
