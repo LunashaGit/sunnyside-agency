@@ -319,7 +319,7 @@ footer{
     #menu
     {
     position: absolute;
-    width: 50rem;
+    width: 62.5rem;
     top:-70px;
     right: 0px;
     list-style-type: none;
@@ -330,20 +330,20 @@ footer{
     #menu li
     {
     padding-left: 10%;
-    font-size: 22px;
+    font-size: 18px;
     display: inline;
     a{
     color: white;
     background: none;
-    padding: 0;
+    padding: 2%;
     }
     }
-    #menu li:nth-child(4){
+    #menu li:hover{
             a{
-            padding: 2%;
-            background: #fff;
-            color: #000;
+            background: rgba($color: #FFF, $alpha: 0.3);
             border-radius: 25px;
+            font-family: 'Fraunces', serif;
+
             }
     }
 
