@@ -380,6 +380,7 @@ footer li a {
     margin: 10vw;
     align-items: flex-start;
     text-align: left;
+    font-weight: 900;
   }
   .essential #a, .essential #b {
     background: url("../image/photos/image-graphic-design.jpg") no-repeat center/cover;
