@@ -273,6 +273,10 @@ footer li a {
     display: none;
   }
 
+  #menuToggle span {
+    display: none;
+  }
+
   #menu {
     position: absolute;
     width: 50rem;
