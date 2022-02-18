@@ -275,7 +275,7 @@ footer li a {
 
   #menu {
     position: absolute;
-    width: 62.5rem;
+    width: 31rem;
     top: -70px;
     right: 0px;
     list-style-type: none;
@@ -284,7 +284,6 @@ footer li a {
   }
 
   #menu li {
-    padding-left: 10%;
     font-size: 18px;
     display: inline;
   }
