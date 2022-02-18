@@ -275,6 +275,7 @@ footer li a {
 
   #menuToggle span {
     display: none;
+    opacity: 0;
   }
 
   #menu {
