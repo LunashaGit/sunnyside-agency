@@ -320,8 +320,8 @@ footer li a {
 
   #menu {
     position: absolute;
-    width: 800px;
-    top: -50px;
+    width: 47.313rem;
+    top: -70px;
     right: 0px;
     list-style-type: none;
     background-color: #3EBFFF;
@@ -423,6 +423,9 @@ footer li a {
   footer img:hover {
     filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(259deg) brightness(9999%) contrast(88%);
   }
+  footer a:hover {
+    color: #fff;
+  }
   footer ul {
     padding-bottom: 3%;
   }
@@ -442,6 +445,12 @@ footer li a {
 
   .header h1 {
     font-size: 4vw;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  .client {
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
 }
 
