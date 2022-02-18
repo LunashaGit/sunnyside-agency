@@ -184,6 +184,9 @@ body {
   color: #a7abae;
   font-family: "Barlow", sans-serif;
 }
+.client #greydark {
+  color: #777879;
+}
 
 #a, #b {
   padding-top: 45vh;
